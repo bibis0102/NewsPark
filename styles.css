@@ -45,12 +45,14 @@ p {
     border-radius: 50px;
     padding: 10px;
     border: none;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
 }
 
 .footer button {
     border-radius: 50px;
     padding: 10px 20px;
+    margin-top: 10px;
 }
 
 .social-icons a {
@@ -70,4 +72,30 @@ p {
 .spinner-border {
     width: 3rem;
     height: 3rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-image {
+        max-width: 60%;
+        margin-bottom: 20px;
+    }
+
+    h1, p {
+        text-align: center;
+    }
+
+    .social-icons {
+        text-align: center;
+    }
+
+    .footer form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer input[type="email"] {
+        margin-bottom: 10px;
+    }
 }
