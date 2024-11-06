@@ -1,0 +1,288 @@
+body {
+    background-color: rgb(231, 231, 231);
+    color: black;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    background-color: #ffffff;
+    transition: background-color 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+  figure {
+    text-align: center;
+    margin: 20px;
+  }
+  figcaption {
+    font-style: italic; 
+    color: #555; 
+  }
+  .dark-mode figcaption{
+    font-style: italic; 
+    color: #d1cdcd; 
+  }
+.nav-item {
+    margin: 0 15px; 
+}
+
+.light-mode .navbar-toggler-icon {
+    background-color: black;
+}
+
+.dark-mode .navbar-toggler {
+    background-color: white;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 150px;
+}
+
+#logo {
+    max-width: 150px;
+    transition: content 0.5s;
+}
+
+#toggleMode {
+    margin-left: 15px;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+ol {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+
+.news-section {
+    margin-bottom: 50px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 77px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.light-mode header {
+    background-color: #f8f9fa;
+}
+
+.dark-mode {
+    background-color: #2e3133;
+    color: white;
+}
+
+.dark-mode header {
+    background-color: #000000;
+}
+
+.dark-mode .nav-link {
+    color: white;
+}
+
+.dark-mode .nav-link:hover {
+    color: #d3d3d3;
+}
+
+.dark-mode .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+.dark-mode .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.news-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.news-section h2 {
+    margin-bottom: 20px;
+}
+
+.news-section h4 {
+    margin-top: 10px;
+}
+
+.news-section p {
+    margin-bottom: 30px;
+}
+
+.carousel-caption .btn {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.light-mode .carousel-caption .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.dark-mode .carousel-caption .btn {
+    background-color: #f8f9fa;
+    color: #343a40;
+    border: none;
+}
+
+.carousel-caption .btn:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.footer {
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    color: blue;
+    transition: background-color 0.5s, color 0.5s;
+    z-index: 1000;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.light-mode .footer {
+    background-color: white;
+    color: blue;
+}
+
+.dark-mode .footer {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .news-section h4,
+    .news-section p {
+        font-size: 14px;
+    }
+
+    .carousel-inner img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-item h2 {
+        font-size: 20px;
+    }
+    .carousel-item h8 {
+        font-size: 14px;
+    }
+
+    header,
+    footer {
+        flex-direction: column;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    #logo {
+        width: 100px;
+    }
+
+    .carousel-caption .btn {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
